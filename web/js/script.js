@@ -337,12 +337,8 @@ $(document).ready(function() {
 });
 
 
-
-
-
-
 //VIDEO BACKGROUND
-$(document).ready(function() {
+/*$(document).ready(function() {
   var videobackground = new $.backgroundVideo($('body'), {
     "align": "centerXY",
     "width": 1280,
@@ -351,4 +347,4 @@ $(document).ready(function() {
     "filename": "cloud",
     "types": ["mp4","ogg","webm"]
   });
-});
+});*/

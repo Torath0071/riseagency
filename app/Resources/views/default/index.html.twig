@@ -18,6 +18,10 @@
     <script src="js/waypoints.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/form.js"></script>
+    <script>
+        var callBackURL = '{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) }}';
+    </script>
 {% endblock %}
 
 {% block body %}
@@ -31,5 +35,7 @@
     {% include 'default/partial/contact-form.html.twig' %}
     {% include 'default/partial/subscribe-form.html.twig' %}
     {% include 'default/partial/footer.html.twig' %}
+
+
 
 {% endblock %}

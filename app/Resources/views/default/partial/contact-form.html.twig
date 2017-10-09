@@ -15,10 +15,10 @@
 
                 <!-- START ERROR AND SUCCESS MESSAGE -->
                 <div class="form_error text-center">
-                    <div class="name_error hide error">Please Enter your name</div>
-                    <div class="email_error hide error">Please Enter your Email</div>
-                    <div class="email_val_error hide error">Please Enter a Valid Email Address</div>
-                    <div class="message_error hide error">Please Enter Your Message</div>
+                    <div class="name_error hide error" data-ajax-display="empty-name">Veuillez entrer votre nom</div>
+                    <div class="email_error hide error" data-ajax-display="empty-email">Veuillez entrer votre email</div>
+                    <div class="email_val_error hide error" data-ajax-display="invalid-email">Veuillez entrer un email valide</div>
+                    <div class="message_error hide error" data-ajax-display="empty-message">Veuillez entrer un message</div>
                 </div>
                 <div class="Sucess"></div>
                 <!-- END ERROR AND SUCCESS MESSAGE -->
@@ -32,11 +32,13 @@
                             <input type="text" class="form-control" id="subject" placeholder="Objet">
                         </div>
 
-
                         <div class="col-md-8">
-                            <textarea class="form-control" id="message" rows="25" cols="10" placeholder="  Votre message"></textarea>
-                            <button type="button" class="btn btn-default submit-btn form_submit">Envoyer le message</button>
+                            <textarea class="form-control" id="message" rows="25" cols="10" placeholder=" Votre message"></textarea>
+                            <button data-ajax="contact" type="button" class="btn btn-default submit-btn form_submit">Envoyer le message</button>
                         </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center" data-ajax-response=""></div>
                     </div>
                 </form>
                 <!-- END FORM -->
@@ -48,14 +50,14 @@
                 <div class="col-md-12 wow bounceInLeft">
                     <div class="social_icons">
                         <ul>
-                            <li><a href=""><i class="fa fa-facebook"></i></a>
+                            <li>
+                                <a href=""><i class="fa fa-facebook"></i></a>
                             </li>
-                            <li><a href=""><i class="fa fa-twitter"></i></a>
+                            <li>
+                                <a href=""><i class="fa fa-twitter"></i></a>
                             </li>
-
-
-
-                            <li><a href=""><i class="fa fa-youtube-play"></i></a>
+                            <li>
+                                <a href=""><i class="fa fa-youtube-play"></i></a>
                             </li>
                         </ul>
                     </div>
