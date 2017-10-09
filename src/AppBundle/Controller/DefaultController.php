@@ -18,12 +18,4 @@ class DefaultController extends Controller
             ];
         return $this->render('default/index.html.twig', $twigVariables);
     }
-
-    /**
-     * @Route("/api", "name=api")
-     */
-    public function apiAction(Request $request)
-    {
-
-    }
 }

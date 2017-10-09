@@ -22,14 +22,14 @@
 
 {% block body %}
 
-    {% include '@AppBundle:Default:partial/header.html.twig' %}
-    {% include '@AppBundle:Default:partial/about.html.twig' %}
-    {% include '@AppBundle:Default:partial/testimonial.html.twig' %}
-    {% include '@AppBundle:Default:partial/feature.html.twig' %}
-    {#{% include '@AppBundle:Default:partial/calltoaction.html.twig' %}#}
-    {% include '@AppBundle:Default:partial/funfact.html.twig' %}
-    {% include '@AppBundle:Default:partial/contact.html.twig' %}
-    {% include '@AppBundle:Default:partial/subscribe-form.html.twig' %}
-    {% include '@AppBundle:Default:partial/footer.html.twig' %}
+    {% include 'default/partial/header.html.twig' %}
+    {% include 'default/partial/about.html.twig' %}
+    {% include 'default/partial/testimonial.html.twig' %}
+    {% include 'default/partial/feature.html.twig' %}
+    {#{% include 'default/partial/calltoaction.html.twig' %}#}
+    {% include 'default/partial/funfact.html.twig' %}
+    {% include 'default/partial/contact-form.html.twig' %}
+    {% include 'default/partial/subscribe-form.html.twig' %}
+    {% include 'default/partial/footer.html.twig' %}
 
 {% endblock %}
