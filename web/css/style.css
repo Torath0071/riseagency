@@ -403,6 +403,11 @@ tuor:visited {
 .carousel-indicators {
     bottom: -8px;
 }
+
+div.carousel-inner .item {
+    height: 450px;
+}
+
 div.carousel-inner .item img {
     border: 2px solid #0AB4B9;
     border-radius: 50%;
