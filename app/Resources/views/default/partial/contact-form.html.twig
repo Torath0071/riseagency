@@ -15,30 +15,29 @@
 
                 <!-- START ERROR AND SUCCESS MESSAGE -->
                 <div class="form_error text-center">
-                    <div class="name_error hide error" data-ajax-display="empty-name">Veuillez entrer votre nom</div>
-                    <div class="email_error hide error" data-ajax-display="empty-email">Veuillez entrer votre email</div>
-                    <div class="email_val_error hide error" data-ajax-display="invalid-email">Veuillez entrer un email valide</div>
-                    <div class="message_error hide error" data-ajax-display="empty-message">Veuillez entrer un message</div>
+                    <div data-ajax-display="empty-name"></div>
+                    <div data-ajax-display="empty-email"></div>
+                    <div data-ajax-display="invalid-email"></div>
+                    <div data-ajax-display="empty-subject"></div>
+                    <div data-ajax-display="empty-message"></div>
+                    <div data-ajax-display="error"></div>
                 </div>
-                <div class="Sucess"></div>
+                <div data-ajax-display="success"></div>
                 <!-- END ERROR AND SUCCESS MESSAGE -->
 
                 <!-- FORM -->
-                <form role="form">
+                <form role="form" data-form="contact">
                     <div class="row">
                         <div class="col-md-4">
-                            <input type="text" class="form-control" id="name" placeholder="Nom">
-                            <input type="email" class="form-control" id="email" placeholder="Email">
-                            <input type="text" class="form-control" id="subject" placeholder="Objet">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Nom">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Objet">
                         </div>
 
                         <div class="col-md-8">
-                            <textarea class="form-control" id="message" rows="25" cols="10" placeholder=" Votre message"></textarea>
+                            <textarea class="form-control" name="message" id="message" rows="25" cols="10" placeholder=" Votre message"></textarea>
                             <button data-ajax="contact" type="button" class="btn btn-default submit-btn form_submit">Envoyer le message</button>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 text-center" data-ajax-response=""></div>
                     </div>
                 </form>
                 <!-- END FORM -->
