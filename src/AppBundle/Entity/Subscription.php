@@ -39,7 +39,7 @@ class Subscription
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="creation_date", type="date", nullable=false)
+     * @ORM\Column(name="creation_date", type="datetime", nullable=false)
      */
     private $creationDate;
 

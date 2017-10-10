@@ -74,7 +74,7 @@ class Contact
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="creation_date", type="date", nullable=false)
+     * @ORM\Column(name="creation_date", type="datetime", nullable=false)
      */
     private $creationDate;
 
@@ -88,7 +88,7 @@ class Contact
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="sent_date", type="date", nullable=true)
+     * @ORM\Column(name="sent_date", type="datetime", nullable=true)
      */
     private $sentDate;
 
