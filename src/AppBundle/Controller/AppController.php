@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 
-class DefaultController extends Controller
+class AppController extends Controller
 {
     /**
      * @Route("/", name="homepage")
@@ -44,7 +44,7 @@ class DefaultController extends Controller
         }
         try {
             $em = $this->getDoctrine()->getManager();
-            $exist = $em->getRepository('AppBundle\Entity\Subscription')
+            $exist = $em->getRepository(Subscription::class)
                 ->findBy(['email' => $email]);
             if (!$exist) {
                 $em->persist((new Subscription())
@@ -112,6 +112,11 @@ class DefaultController extends Controller
         return ['success' => "Message envoyé avec succès"];
     }
 
+    /**
+     * @param Contact $contact
+     * @return bool
+     * @throws \Exception
+     */
     private function sendContactMail(Contact $contact):bool
     {
         try {
