@@ -4,7 +4,8 @@ $(document).ready(function() {
         e.preventDefault();
         e.stopPropagation();
 
-        var formData = {action: $(this).attr('data-ajax')};
+        var act = $(this).attr('data-ajax');
+        var formData = {action: act};
         var form = $('form[data-form=' + formData.action + ']');
         form.find('input, textarea').each(function() {
             formData[$(this).attr('name')] = $(this).val();
@@ -22,11 +23,12 @@ $(document).ready(function() {
                         var v = data[k];
                         for (var kk in v) {
                             if (v.hasOwnProperty(kk)) {
-                                if (kk == 'success') {
+                                if (kk === 'success') {
                                     doClear = true;
                                 }
                                 var vv = v[kk];
-                                var elm = $('[data-ajax-display="' + kk + '"]');
+                                var elm = $('[data-ajax-form="' + act + '"][data-ajax-display="' + kk + '"]');
+                                console.log(elm);
                                 elm.html(vv);
                                 elm.css('display', 'block');
                                 elm.addClass('error');

@@ -124,7 +124,7 @@ class AppController extends Controller
                 ->setFrom($this->container->getParameter('contact_from_email'), $this->container->getParameter('contact_from_name'))
                 ->setTo($this->container->getParameter('contact_to_email'), $this->container->getParameter('contact_to_name'))
                 ->setReplyTo($contact->getEmail())
-                ->setSubject("[Rise Agency - Contact]" . $contact->getSubject())
+                ->setSubject("[Rise Agency - Contact] " . $contact->getSubject())
                 ->setBody($this->renderView('Email/contact.html.twig', ['contact' => $contact]), 'text/html');
 
             $this->get('mailer')->send($message);
