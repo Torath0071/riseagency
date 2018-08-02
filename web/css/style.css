@@ -141,7 +141,7 @@ p {
     color: #0AB4B9;
 }
 .header {
-    background: url(../../../../web/images/home.jpg);
+    background: url(../images/home.jpg);
     background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -391,7 +391,7 @@ tuor:visited {
     height: auto;
 }
 .testimonial {
-    background: url(../../../../web/images/testimonial.jpg);
+    background: url(../images/testimonial.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -622,7 +622,7 @@ div.carousel-inner .item img {
 -----------------------------------------*/
 
 .fun_facts {
-    background: url(../../../../web/images/fun_bg.jpg) no-repeat center;
+    background: url(../images/fun_bg.jpg) no-repeat center;
     background-size: cover;
 }
 .fun_facts .section_overlay {
@@ -891,7 +891,7 @@ div.carousel-inner .item img {
 -----------------------------------------*/
 
 .subscribe {
-    background-image: url(../../../../web/images/subscribe.jpg);
+    background-image: url(../images/subscribe.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
